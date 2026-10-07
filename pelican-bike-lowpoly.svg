@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e3a5f"/>
+      <stop offset="0.5" stop-color="#2d6a8c"/>
+      <stop offset="1" stop-color="#4fb3d6"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c5f3d"/>
+      <stop offset="1" stop-color="#1a4a2e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect x="0" y="460" width="800" height="140" fill="url(#ground)"/>
+
+  <!-- low-poly mountain -->
+  <polygon points="0,460 200,280 400,460" fill="#256042"/>
+  <polygon points="300,460 550,220 800,460" fill="#1e5538"/>
+  <polygon points="600,460 720,340 800,460" fill="#2c5f3d"/>
+
+  <!-- sun -->
+  <circle cx="700" cy="80" r="45" fill="#ffd43b" opacity="0.9"/>
+  <circle cx="700" cy="80" r="65" fill="#ffd43b" opacity="0.15"/>
+
+  <!-- bird silhouette (low poly) - pelican body -->
+  <polygon points="310,280 290,250 330,230 370,235 400,250 410,275 380,295 330,300" fill="#f8f4eb"/>
+  <polygon points="305,275 285,245 320,235 350,240 370,255 360,270" fill="#e8e0d0"/>
+  <polygon points="360,255 390,270 410,275 380,260" fill="#d8d0c0"/>
+
+  <!-- neck & head -->
+  <polygon points="370,250 385,210 415,175 445,155 470,150 490,160 460,170 420,195" fill="#f8f4eb"/>
+  <polygon points="385,210 405,195 425,170 415,185" fill="#e8e0d0"/>
+
+  <!-- beak -->
+  <polygon points="470,150 590,165 470,180" fill="#ffb700"/>
+  <polygon points="470,180 540,195 470,190" fill="#ff9500"/>
+  <polygon points="470,150 510,152 510,178 470,180" fill="#e88500"/>
+
+  <!-- eye -->
+  <circle cx="450" cy="160" r="5" fill="#1a2a3a"/>
+
+  <!-- wing on body -->
+  <polygon points="320,255 300,225 350,215 380,235 360,260" fill="#e8e0d0"/>
+  <polygon points="340,235 320,215 355,210 370,225 355,240" fill="#d8d0c0"/>
+
+  <!-- bicycle frame (low poly) -->
+  <g stroke="#ffb700" stroke-width="6" stroke-linejoin="round" fill="none">
+    <path d="M400,390 L355,280"/> <!-- seat tube -->
+    <path d="M360,285 L530,310"/> <!-- top tube -->
+    <path d="M400,390 L540,345"/> <!-- down tube -->
+    <path d="M400,390 L220,405"/> <!-- chain stay -->
+    <path d="M355,285 L220,405"/> <!-- seat stay -->
+    <path d="M540,345 L580,415"/> <!-- fork -->
+  </g>
+
+  <!-- wheels -->
+  <g fill="none" stroke="#ffb700" stroke-width="6">
+    <circle cx="220" cy="405" r="55"/>
+    <circle cx="580" cy="415" r="55"/>
+  </g>
+  <g fill="none" stroke="#3a6e8c" stroke-width="4" stroke-dasharray="28,28">
+    <circle cx="220" cy="405" r="48"/>
+    <circle cx="580" cy="415" r="48"/>
+  </g>
+
+  <!-- spokes -->
+  <g stroke="#3a6e8c" stroke-width="2" fill="none">
+    <g transform="translate(220,405)">
+      <line x1="0" y1="0" x2="48" y2="0"/>
+      <line x1="0" y1="0" x2="-48" y2="0"/>
+      <line x1="0" y1="0" x2="0" y2="48"/>
+      <line x1="0" y1="0" x2="0" y2="-48"/>
+      <line x1="0" y1="0" x2="34" y2="34"/>
+      <line x1="0" y1="0" x2="-34" y2="34"/>
+      <line x1="0" y1="0" x2="-34" y2="-34"/>
+      <line x1="0" y1="0" x2="34" y2="-34"/>
+    </g>
+    <g transform="translate(580,415)">
+      <line x1="0" y1="0" x2="48" y2="0"/>
+      <line x1="0" y1="0" x2="-48" y2="0"/>
+      <line x1="0" y1="0" x2="0" y2="48"/>
+      <line x1="0" y1="0" x2="0" y2="-48"/>
+      <line x1="0" y1="0" x2="34" y2="34"/>
+      <line x1="0" y1="0" x2="-34" y2="34"/>
+      <line x1="0" y1="0" x2="-34" y2="-34"/>
+      <line x1="0" y1="0" x2="34" y2="-34"/>
+    </g>
+  </g>
+
+  <!-- handlebar -->
+  <g stroke="#ffb700" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M530,300 L540,270 L570,280"/>
+  </g>
+
+  <!-- saddle -->
+  <polygon points="350,275 330,265 370,265 390,275" fill="#1a2a3a"/>
+
+  <!-- pedals & crank -->
+  <g stroke="#1a2a3a" stroke-width="5" stroke-linecap="round">
+    <line x1="400" y1="390" x2="430" y2="365"/>
+    <line x1="400" y1="390" x2="370" y2="415"/>
+  </g>
+  <rect x="420" y="355" width="20" height="8" rx="2" fill="#1a2a3a"/>
+  <rect x="360" y="410" width="20" height="8" rx="2" fill="#1a2a3a"/>
+
+  <!-- legs -->
+  <g stroke="#ff9500" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M345,290 L360,330 L400,365"/>
+    <path d="M335,290 L325,335 L370,415"/>
+  </g>
+
+  <!-- wing reaching handlebar -->
+  <path d="M360,260 Q440,280 480,285 Q520,290 550,275" fill="none" stroke="#f8f4eb" stroke-width="14" stroke-linecap="round"/>
+  <path d="M540,270 Q560,265 575,275 Q565,285 550,280" fill="#f8f4eb" stroke="#e8e0d0" stroke-width="3"/>
+</svg>

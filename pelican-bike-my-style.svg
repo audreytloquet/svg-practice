@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 800 600" width="800" height="600" role="img"
+     aria-labelledby="title desc">
+  <title id="title">A pelican riding a bicycle</title>
+  <desc id="desc">Minimal illustration of a pelican pedalling a bicycle across a cream field, drawn in ink, cream, coral and gold.</desc>
+
+  <defs>
+    <clipPath id="spot"><circle cx="400" cy="330" r="228"/></clipPath>
+    <g id="wheel">
+      <circle r="95" fill="#f5efe6" stroke="#1f2933" stroke-width="9"/>
+      <g stroke="#1f2933" stroke-width="2.5" stroke-linecap="round" opacity="0.55">
+        <line x1="0" y1="0" x2="88" y2="0"/>
+        <line x1="0" y1="0" x2="-88" y2="0"/>
+        <line x1="0" y1="0" x2="0" y2="88"/>
+        <line x1="0" y1="0" x2="0" y2="-88"/>
+        <line x1="0" y1="0" x2="62" y2="62"/>
+        <line x1="0" y1="0" x2="-62" y2="62"/>
+        <line x1="0" y1="0" x2="-62" y2="-62"/>
+        <line x1="0" y1="0" x2="62" y2="-62"/>
+      </g>
+      <circle r="11" fill="#e8613c"/>
+      <circle r="4" fill="#f5efe6"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="600" fill="#f5efe6"/>
+
+  <!-- backdrop disc, clipped so the hills stay inside it -->
+  <circle cx="400" cy="330" r="228" fill="#f2b544" opacity="0.22"/>
+  <g clip-path="url(#spot)">
+    <circle cx="612" cy="188" r="46" fill="#f2b544"/>
+    <path d="M400 92 L 628 330 L 172 330 Z" fill="#e8613c" opacity="0.14"/>
+    <path d="M172 330 H 628 L 400 560 Z" fill="#8fa98a" opacity="0.3"/>
+  </g>
+  <circle cx="400" cy="330" r="228" fill="none" stroke="#1f2933" stroke-width="3" opacity="0.28"/>
+
+  <!-- ground -->
+  <line x1="0" y1="525" x2="800" y2="525" stroke="#1f2933" stroke-width="3" opacity="0.35"/>
+  <g fill="none" stroke="#8fa98a" stroke-width="4" stroke-linecap="round">
+    <path d="M96 525 l-5 -18 M96 525 l9 -15"/>
+    <path d="M712 525 l-6 -17 M712 525 l8 -14"/>
+  </g>
+
+  <!-- speed ticks -->
+  <g stroke="#1f2933" stroke-width="4" stroke-linecap="round" opacity="0.3">
+    <line x1="70" y1="330" x2="126" y2="330"/>
+    <line x1="94" y1="366" x2="150" y2="366"/>
+    <line x1="60" y1="402" x2="112" y2="402"/>
+  </g>
+
+  <!-- wheels -->
+  <use xlink:href="#wheel" href="#wheel" transform="translate(210 430)"/>
+  <use xlink:href="#wheel" href="#wheel" transform="translate(590 430)"/>
+
+  <!-- far leg -->
+  <g fill="none" stroke="#e8613c" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M326 292 C 322 330, 320 358, 326 380 L 374 466" stroke-width="14"/>
+    <path d="M326 292 C 322 330, 320 358, 326 380 L 374 466" stroke="#1f2933" stroke-width="6"
+          stroke-dasharray="0.1 12" opacity="0"/>
+  </g>
+  <circle cx="374" cy="470" r="15" fill="#e8613c"/>
+
+  <!-- frame -->
+  <g fill="none" stroke="#1f2933" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 445 L 352 295"/>
+    <path d="M355 305 L 545 318"/>
+    <path d="M400 445 L 555 365"/>
+    <path d="M400 445 L 210 430"/>
+    <path d="M352 300 L 210 430"/>
+    <path d="M555 365 L 590 430"/>
+    <path d="M545 312 L 552 280"/>
+  </g>
+  <circle cx="400" cy="445" r="14" fill="#f5efe6" stroke="#1f2933" stroke-width="7"/>
+
+  <!-- handlebar -->
+  <path d="M528 272 C 548 266, 566 270, 578 280" fill="none" stroke="#1f2933"
+        stroke-width="10" stroke-linecap="round"/>
+  <path d="M570 276 L 588 284" stroke="#e8613c" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- saddle -->
+  <path d="M316 300 C 336 290, 372 290, 392 300 C 374 310, 336 310, 316 306 Z" fill="#1f2933"/>
+
+  <!-- tail -->
+  <path d="M272 226 C 244 218, 214 212, 190 210 C 200 232, 210 246, 222 254
+           C 202 252, 210 268, 224 272 C 242 278, 262 268, 276 252 Z"
+        fill="#e8dfd0" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- near leg -->
+  <path d="M344 288 C 366 316, 376 342, 370 364 L 422 424" fill="none" stroke="#e8613c"
+        stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="428" cy="424" r="17" fill="#e8613c"/>
+
+  <!-- body -->
+  <path d="M272 244 C 246 202, 268 162, 312 156 C 358 150, 402 180, 406 222
+           C 410 262, 366 290, 316 286 C 288 283, 282 262, 272 244 Z"
+        fill="#fdfcf9" stroke="#1f2933" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- wing: one folded, one forward on the bar -->
+  <path d="M290 220 C 324 206, 360 228, 354 258 C 348 284, 310 288, 288 268
+           C 276 256, 278 228, 290 220 Z"
+        fill="#e8dfd0" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M350 240 C 414 262, 436 288, 458 292 C 500 298, 546 296, 584 290"
+        fill="none" stroke="#1f2933" stroke-width="24" stroke-linecap="round"/>
+  <path d="M350 240 C 414 262, 436 288, 458 292 C 500 298, 546 296, 584 290"
+        fill="none" stroke="#fdfcf9" stroke-width="15" stroke-linecap="round"/>
+  <path d="M582 276 C 600 270, 614 278, 614 290 C 614 302, 600 308, 588 304
+           C 578 300, 577 283, 582 276 Z"
+        fill="#fdfcf9" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- neck -->
+  <path d="M330 222 C 364 200, 382 172, 408 152" fill="none" stroke="#1f2933"
+        stroke-width="40" stroke-linecap="round"/>
+  <path d="M330 222 C 364 200, 382 172, 408 152" fill="none" stroke="#fdfcf9"
+        stroke-width="30" stroke-linecap="round"/>
+
+  <!-- head -->
+  <circle cx="446" cy="144" r="41" fill="#fdfcf9" stroke="#1f2933" stroke-width="6"/>
+  <path d="M424 112 C 414 98, 408 90, 404 82 C 418 86, 430 96, 436 108 Z"
+        fill="#fdfcf9" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- pouch + bill -->
+  <path d="M468 146 C 476 192, 522 206, 572 184 C 590 176, 599 162, 600 150
+           C 566 152, 514 152, 468 146 Z"
+        fill="#e8613c" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M466 124 C 512 126, 560 136, 600 150 L 468 148 Z"
+        fill="#f2b544" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+
+  <circle cx="466" cy="130" r="7" fill="#1f2933"/>
+  <circle cx="468.5" cy="127.5" r="2.4" fill="#fdfcf9"/>
+</svg>
