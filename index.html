@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SVG Practice — Pelican on a Bicycle</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    padding: 2.5rem 1.5rem 1.5rem;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 .5rem;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid #334155;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  figure:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  .art {
+    background: #f1f5f9;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .art img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  figcaption {
+    padding: .9rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+  }
+  figcaption .name {
+    font-weight: 600;
+    font-size: .95rem;
+  }
+  figcaption .file {
+    color: var(--muted);
+    font-size: .8rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  figcaption a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: .85rem;
+    white-space: nowrap;
+  }
+  figcaption a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: .85rem;
+    padding: 2rem 1rem 3rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Pelican on a Bicycle</h1>
+  <p>SVG illustration practice — six variations</p>
+</header>
+
+<div class="grid">
+  <figure>
+    <div class="art"><img src="pelican-bike.svg" alt="A cartoon pelican with a long yellow bill riding a bicycle" loading="lazy"></div>
+    <figcaption>
+      <span class="name">Original<span class="file">pelican-bike.svg</span></span>
+      <a href="pelican-bike.svg" target="_blank" rel="noopener">view</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="art"><img src="pelican-bike-2.svg" alt="A helmeted pelican riding a bicycle at sunset" loading="lazy"></div>
+    <figcaption>
+      <span class="name">Sunset Helmet<span class="file">pelican-bike-2.svg</span></span>
+      <a href="pelican-bike-2.svg" target="_blank" rel="noopener">view</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="art"><img src="pelican-bike-flat.svg" alt="Flat outline-free illustration of a pelican riding a bicycle" loading="lazy"></div>
+    <figcaption>
+      <span class="name">Flat<span class="file">pelican-bike-flat.svg</span></span>
+      <a href="pelican-bike-flat.svg" target="_blank" rel="noopener">view</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="art"><img src="pelican-bike-lowpoly.svg" alt="Low-poly gradient illustration of a pelican riding a bicycle" loading="lazy"></div>
+    <figcaption>
+      <span class="name">Low Poly<span class="file">pelican-bike-lowpoly.svg</span></span>
+      <a href="pelican-bike-lowpoly.svg" target="_blank" rel="noopener">view</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="art"><img src="pelican-bike-my-style.svg" alt="Minimal illustration of a pelican pedalling a bicycle" loading="lazy"></div>
+    <figcaption>
+      <span class="name">My Style<span class="file">pelican-bike-my-style.svg</span></span>
+      <a href="pelican-bike-my-style.svg" target="_blank" rel="noopener">view</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="art"><img src="pelican-bike-night.svg" alt="A cartoon pelican wearing a red scarf riding a bicycle at night" loading="lazy"></div>
+    <figcaption>
+      <span class="name">Night<span class="file">pelican-bike-night.svg</span></span>
+      <a href="pelican-bike-night.svg" target="_blank" rel="noopener">view</a>
+    </figcaption>
+  </figure>
+</div>
+
+<footer>6 SVGs · open any image for the full-size file</footer>
+</body>
+</html>
